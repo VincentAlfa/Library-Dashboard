@@ -20,6 +20,7 @@ module.exports = {
       fontFamily: {
         jolly_lodger: ['"Jolly Lodger"', 'system-ui'],
         inknut_antiqua: ['"Inknut Antiqua"', 'serif'],
+        inter: ['Inter', 'sans-serif'],
       },
       colors: {
         default_grey: '#8C8C8C',

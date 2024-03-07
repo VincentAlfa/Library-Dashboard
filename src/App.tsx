@@ -7,7 +7,7 @@ import Header from '@/components/header/header';
 function App() {
   return (
     <>
-      <div className='flex h-screen w-full'>
+      <div className='flex h-screen w-full font-inter'>
         <Sidebar />
         <div className='flex w-full flex-col'>
           <Header />

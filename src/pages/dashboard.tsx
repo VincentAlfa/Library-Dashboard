@@ -7,9 +7,11 @@ import { cn } from '@/lib/utils';
 
 const Dashboard = () => {
   const totalBooks = bookDatas.length;
+  
   const gramedia = bookDatas.filter(
     (data) => data.penerbit === 'Gramedia',
   ).length;
+  
   const togamas = bookDatas.filter(
     (data) => data.penerbit === 'Togamas',
   ).length;
@@ -17,7 +19,7 @@ const Dashboard = () => {
   const cards = [
     {
       manyBooks: totalBooks,
-      text: 'total buku',
+      text: 'Total Buku',
       icon: totalBooksIcon,
     },
     {
