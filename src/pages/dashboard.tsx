@@ -7,11 +7,11 @@ import { cn } from '@/lib/utils';
 
 const Dashboard = () => {
   const totalBooks = bookDatas.length;
-  
+
   const gramedia = bookDatas.filter(
     (data) => data.penerbit === 'Gramedia',
   ).length;
-  
+
   const togamas = bookDatas.filter(
     (data) => data.penerbit === 'Togamas',
   ).length;
@@ -35,14 +35,17 @@ const Dashboard = () => {
   ];
 
   return (
-    <div className='flex h-screen w-full flex-col bg-[#E2E2E2]'>
+    <div className='flex h-screen w-full flex-col'>
       <div className='font-abc p-5 text-xl text-muted-foreground'>
         Dashboard
       </div>
       <div className='flex justify-center gap-6 p-5'>
         {cards.map((card) => {
           return (
-            <Card className='flex h-32 w-96 items-center' key={card.text}>
+            <Card
+              className='flex h-32 w-96 items-center shadow-md'
+              key={card.text}
+            >
               <CardContent className='flex h-full w-full items-center justify-between py-1'>
                 <img src={card.icon} alt='' />
                 <div className='flex flex-col'>
@@ -50,7 +53,7 @@ const Dashboard = () => {
                     className={cn(
                       'text-end text-6xl font-semibold text-[#0270AF]',
                       {
-                        'text-[#FF6B00]': card.text === 'total buku',
+                        'text-[#FF6B00]': card.text === 'Total Buku',
                       },
                     )}
                   >

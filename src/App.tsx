@@ -11,11 +11,16 @@ function App() {
         <Sidebar />
         <div className='flex w-full flex-col'>
           <Header />
-          <Routes>
-            <Route path='/' element={<Navigate to={'/dashboard'} replace />} />
-            <Route path='/dashboard' element={<Dashboard />} />
-            <Route path='/databuku' element={<BookDatas />} />
-          </Routes>
+          <div className='bg-[#F6FAFD]'>
+            <Routes>
+              <Route
+                path='/'
+                element={<Navigate to={'/dashboard'} replace />}
+              />
+              <Route path='/dashboard' element={<Dashboard />} />
+              <Route path='/databuku' element={<BookDatas />} />
+            </Routes>
+          </div>
         </div>
       </div>
     </>

@@ -1,5 +1,8 @@
 import { CalendarDays } from 'lucide-react';
 import { buttonVariants } from '@/components/ui/button';
+import { Select, SelectTrigger } from '@/components/ui/select';
+import { Avatar, AvatarImage } from '@/components/ui/avatar';
+import profileAvatar from '@/icon/profile-avatar.svg';
 
 const Header = () => {
   return (
@@ -11,7 +14,19 @@ const Header = () => {
           <CalendarDays />
           <h1>01 february 2024</h1>
         </div>
-        <h1>Profile</h1>
+        <Select>
+          <SelectTrigger className='w-60'>
+            <div className='flex'>
+              <Avatar>
+                <AvatarImage src={profileAvatar} alt='profile' />
+              </Avatar>
+              <div className='flex flex-col'>
+                <h1>Andika Saputra</h1>
+                <p>Staff Admin</p>
+              </div>
+            </div>
+          </SelectTrigger>
+        </Select>
       </div>
     </header>
   );
