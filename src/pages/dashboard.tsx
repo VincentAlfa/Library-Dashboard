@@ -36,9 +36,7 @@ const Dashboard = () => {
 
   return (
     <div className='flex h-screen w-full flex-col'>
-      <div className='font-abc p-5 text-xl text-muted-foreground'>
-        Dashboard
-      </div>
+      <h1 className='p-5 text-xl font-semibold text-[#666262]'>Dashboard</h1>
       <div className='flex justify-center gap-6 p-5'>
         {cards.map((card) => {
           return (
