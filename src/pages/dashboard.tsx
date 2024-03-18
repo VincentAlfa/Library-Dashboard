@@ -44,7 +44,7 @@ const Dashboard = () => {
               className='flex h-24 w-80 items-center shadow-md'
               key={card.text}
             >
-              <CardContent className='flex h-full w-full items-center justify-between py-1'>
+              <CardContent className='flex h-full w-full items-center justify-between py-1 '>
                 <img className='h-16 w-16' src={card.icon} alt='' />
                 <div className='flex flex-col text-end'>
                   <h1

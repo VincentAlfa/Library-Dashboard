@@ -13,7 +13,7 @@ const Account = () => {
 
   return (
     <Select>
-      <SelectTrigger className='h-14 w-60 rounded-xl'>
+      <SelectTrigger className='h-14 max-w-60 rounded-xl'>
         <div className='flex p-2'>
           <Avatar>
             <AvatarImage src={profileData.image} alt='profile' />
@@ -25,16 +25,6 @@ const Account = () => {
         </div>
       </SelectTrigger>
       <SelectContent className='fle-col flex rounded-xl'>
-        <div className='flex items-center px-4 py-2'>
-          <Avatar>
-            <AvatarImage src={profileData.image} alt='profile' />
-          </Avatar>
-          <div className='flex flex-col justify-between pl-3 text-left'>
-            <h1 className='text-[15px] font-semibold'>{profileData.name}</h1>
-            <p className='text-[15px]'>{profileData.role}</p>
-          </div>
-        </div>
-        <Separator />
         <div className='flex gap-3 px-4 py-3'>
           <Settings className='size-7 text-default_grey' />
           <h1 className='text-default_grey'>Profile</h1>
